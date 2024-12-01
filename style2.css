@@ -21,7 +21,7 @@ body {
 
 header {
     background: rgba(0, 0, 0, 0.7);
-    color:#008080;
+    color: #ff9f00;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -46,14 +46,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #008080;
+    color: #ff9f00;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff9f00;
+    color: #008080;
 }
 
 .hero {
@@ -70,28 +70,28 @@ nav ul li a:hover {
 
 .hero-content h2 {
     font-size: 45px;
-    color: #008080;
+    color: #ff9f00;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content p {
     font-size: 20px;
-    color: #008080;
+    color: #ff9f00;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.flavors {
+.models {
     padding: 50px 0;
     text-align: center;
 }
 
-.flavors h2 {
+.models h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #008080;
+    color: #ff9f00;
 }
 
-.flavor-card {
+.model-card {
     display: inline-block;
     width: 30%;
     margin: 10px;
@@ -104,42 +104,48 @@ nav ul li a:hover {
     color: white;
 }
 
-.flavor-card h3, .flavor-card p {
+.model-card h3, .model-card p {
     color: white; 
 }
 
-.flavor-card:hover {
+.model-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     background: rgba(126, 122, 122, 0.8); 
 }
 
-.flavor-card:hover h3, .flavor-card:hover p {
+.model-card:hover h3, .model-card:hover p {
     color: white; 
 }
 
-
-.flavor-card img {
+.model-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.flavor-card img:hover {
+.model-card img:hover {
     transform: scale(1.1);
 }
 
-.flavor-card h3 {
+.model-card h3 {
     font-size: 24px;
     margin-top: 20px;
     color: #333;
 }
 
-.flavor-card p {
+.model-card p {
     font-size: 16px;
     margin-top: 10px;
     color: #555;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff9f00;
+    margin-top: 15px;
 }
 
 .about {
@@ -152,69 +158,62 @@ nav ul li a:hover {
 .about h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #008080;
+    color: #ff9f00;
 }
 
 .about p {
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto;
-    color: #008080;
+    color: white;
 }
 
 .contact {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     padding: 50px 0;
+    color: white;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
-    color: #008080;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-form input,
-form textarea {
-    width: 80%;
-    padding: 12px;
-    margin: 10px 0;
-    font-size: 16px;
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    background: #f9f9f9;
-    transition: border 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
 }
 
-form input:focus,
-form textarea:focus {
-    border-color: #ff9f00;
-    outline: none;
-}
-
-form button {
-    padding: 12px 20px;
+.contact form button {
+    padding: 10px 20px;
     background: #ff9f00;
-    color: #fff;
+    color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
-form button:hover {
-    background: #e68900;
+.contact form button:hover {
+    background: #008080;
 }
 
 footer {
-    background: #1a1a1a;
-    color: #C0C0C0;
-    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px 0;
-    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
 }
 
 footer p {
